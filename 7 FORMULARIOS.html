@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+</head>
+<body>
+    
+   <h1>FORMULARIOS</h1>
+   <!-- el formulario se debe enviar a un script en php, el method GET= informacion no relevante y el method POST=relevante como contraseñas -->
+   
+   <form action="myscript.php" method="POST"> <!-- formulario -->
+   
+       <fieldset> <!-- recuadro del formulario -->
+       <legend>Datos del Usuario</legend><!-- nombre en el recuadro -->
+       
+       <!-- type=tipo texto etc, pleaceholder= marca de agua debajo, required=llenado obligatorio, autofocus=marcado azul en el momento -->
+       <label for="name">Nombre:</label> <br>
+       <input type="text" id="name" name="name" placeholder="ingresa tu nombre aqui" required autofocus>
+       <br><br>
+       
+       <label for="">Correo</label><br>
+       <input type="email" id="" name="email"> <br><br>
+       
+       <label for="pass">Contraseña</label><br>
+       <input type="password" id="pass" name="pass"><br><br>
+       
+       <label for="birthday">Fecha de Nacimiento</label><br>
+       
+       <input type="date" id="birthday" name="birthday"><br><br>
+       
+       <label for="cv">Ingresa tu cv</label>
+       <input type="file" id="cv" name="cv"><br>
+       
+       
+       
+       <!-- añadir cuadro par adjuntar archivo -->
+       <textarea name="Description" id="Description" cols="30" rows="10"></textarea>
+       
+       </fieldset>
+       
+       <!-- otro recuadro -->
+       <fieldset>
+           <legend>Color favorito</legend>
+           
+         
+           <input type="radio" id="red" name="color" value="red">
+             <label for="red">Rojo</label><br>
+             
+             <input type="radio" id="blue" name="color" value="blue">
+             <label for="blue">Azul</label><br>
+             
+             <input type="radio" id="green" name="color" value="green">
+             <label for="green">Verde</label><br>
+             <!-- entrada de tipo color -->
+             <input type="color" name="color"><br>
+             
+             <!-- entrada de tipo lista de colores -->
+             <select name="color2" id="color2">
+              <option value="blue">Azul</option>
+               <option value="green"">Verde</option>
+                <option value="red">Rojo</option> 
+                 <option value="orang">Naranja</option>  
+             </select>
+             
+       </fieldset>
+       
+       
+       <!-- lista de varias opciones -->
+       
+       <fieldset>
+           
+           <legend>Hobbies</legend>
+           
+           
+           <input type="checkbox" id="read" name="hobby1" value="read">
+           <label for="read">Leer</label><br>
+           
+             <input type="checkbox" id="dance" name="hobby2" value="dance">
+           <label for="dance">Bailar</label><br>
+           
+             <input type="checkbox" id="coding" name="hobby3" value="coding">
+           <label for="coding">Programar</label><br>
+           
+       </fieldset><br>
+       
+       <input type="submit" value="listo">
+       <input type="reset" value="Borrar">
+       
+   </form>
+    
+</body>
+</html>
